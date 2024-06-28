@@ -30,7 +30,8 @@ def predict():
     try:
         data = request.get_json()   
         print(data)  
-        query_df = pd.DataFrame([data]) 
+        rdata=[data['gender'],data['age'],data['hypertension'],data['heartDisease'],data['everMarried'],data['workType'],data['residenceType'],data['avgGlucoseLevel'],data['bmi'],data['smokingStatus']]
+        query_df = pd.DataFrame([rdata]) 
         # [[data['a'],51.0,0,0,1,2,0,166.29,25.600000,1]]
         prediction = model.predict(query_df) 
         print(prediction[0])    

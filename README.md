@@ -31,6 +31,23 @@ This is the main file with all the preprocessing, visualisations, various Machin
 11. Logistic Regression(With HyperParameter Tuning)
 12. SVC(With HyperParameter Tuning)
 - Saving the weights and .pkl file for deployment
-## How to run:
+## How to run model:
 - Run the cells according to above mentioned pipeline
 - Model with highest accuracy (Random forest classifier) will be saved in .pkl extension.
+
+## How to run project:
+- Install Node.js and Python on system
+- Clone the repository
+- Install the required Python packages:
+```bash
+pip install -r requirements.txt
+```
+- Nevigate to root directory of project and install required npm packages
+```bash
+npm i
+```
+- Nevigate to Client folder and install required npm packages as above
+- Run the project with following command
+```bash
+npm run dev
+```

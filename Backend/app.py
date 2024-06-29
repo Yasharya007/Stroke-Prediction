@@ -8,11 +8,7 @@ app = Flask(__name__)
 
 # Enable CORS for all routes, allowing requests from any origin
 CORS(app,resources={r"/*":{"origins":"*"}})
-# try:
-#     with open("model.pkl", "rb") as f:
-#         est = pickle.load(f)
-# except InconsistentVersionWarning as w:
-#     print(w.original_sklearn_version)
+
 
 model = pickle.load(open('RandomForest.pkl', 'rb'))
 

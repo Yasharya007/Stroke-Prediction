@@ -4,9 +4,8 @@
 - Stroke is the 2nd leading cause of death globally, responsible for approximately 11% of total deaths. The given dataset can be used to predict whether a patient is likely to get a stroke based on the input parameters like gender, age, bmi value, various diseases, and smoking status.
 ## Built using:
 - [Scikit Learn: ](https://scikit-learn.org/stable/) ML Library used
-- [TensorFlow Keras: ](https://www.tensorflow.org/api_docs/python/tf/keras) ML Libraries used
-- [HTML: ](https://developer.mozilla.org/en-US/docs/Web/HTML) HTML documentation used
-- [Javscript: ](https://developer.mozilla.org/en-US/docs/Web/JavaScript) Javscript framework used
+- [React Js: ](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_getting_started) React Js documentation used
+- [Flask: ](https://flask.palletsprojects.com/en/3.0.x/tutorial/) Flask framework used
 - [Pandas: ](https://pandas.pydata.org/) Python data manipulation libraries
 - [Seaborn: ](https://seaborn.pydata.org/) Data visualisation library
 ## Pipeline:
@@ -31,7 +30,6 @@ This is the main file with all the preprocessing, visualisations, various Machin
 10. LGBM Classifier(With HyperParameter Tuning)
 11. Logistic Regression(With HyperParameter Tuning)
 12. SVC(With HyperParameter Tuning)
-
 - Saving the weights and .pkl file for deployment
 ## How to run:
 - Run the cells according to above mentioned pipeline

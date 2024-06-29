@@ -61,3 +61,4 @@ npm i
 ```bash
 npm run dev
 ```
+![alt text](image.png)

@@ -14,6 +14,7 @@ const HealthForm = () => {
     bmi: '',
     smokingStatus: ''
   });
+  const [result,setResult]=useState("Fill Details to Check")
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -33,6 +34,11 @@ const HealthForm = () => {
     axios.post("http://127.0.0.1:5000/predict",formData)
     .then((response)=>{
         console.log(response)
+        if(response.data===0){
+            setResult("Low Chance")
+        }else{
+            setResult("High Chance")
+        }
     })
     .catch((error)=>{
         console.log(error)
@@ -43,6 +49,7 @@ const HealthForm = () => {
   return (
     <>
     <form onSubmit={handleSubmit}>
+      <div className='headsub'>Predict Your Risk of Stroke Today!</div>
       <label>
         Gender:
         <select name="gender" value={formData.gender} onChange={handleChange}>
@@ -75,7 +82,7 @@ const HealthForm = () => {
         Ever Married:
         <select name="everMarried" value={formData.everMarried} onChange={handleChange}>
           <option value="">Select</option>
-          <option value={1}>Yes</option>
+          <option value={1}>Yes</option> 
           <option value={0}>No</option>
         </select>
       </label>
@@ -118,6 +125,9 @@ const HealthForm = () => {
       </label>
       <button type="submit">Submit</button>
     </form>
+    <div>
+      Risk of Stroke : <span className={result==="Low Chance"?"low":"high"}>{result}</span>
+    </div>
     </>
   );
 };

@@ -38,15 +38,25 @@ This is the main file with all the preprocessing, visualisations, various Machin
 ## How to run project:
 - Install Node.js and Python on system
 - Clone the repository
+```bash
+git clone https://github.com/Yasharya007/Stroke-Prediction.git
+cd Stroke-Prediction
+```
 - Install the required Python packages:
 ```bash
+cd Backend
 pip install -r requirements.txt
 ```
 - Nevigate to root directory of project and install required npm packages
 ```bash
+cd ..
 npm i
 ```
 - Nevigate to Client folder and install required npm packages as above
+```bash
+cd Client
+npm i
+```
 - Run the project with following command
 ```bash
 npm run dev
